@@ -78,6 +78,7 @@ const Galeria = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1  }}
             transition={{ duration: 2, ease: "easeOut", delay: 1 }}
+            isMobilePortrait={isMobilePortrait}
         >
             {isMobilePortrait ? (
             <Rotate />

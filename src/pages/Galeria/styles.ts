@@ -5,7 +5,7 @@ import { Phone } from 'react-bootstrap-icons';
 
 import { colors } from '../../styles';
 
-const Container = styled.div`
+const Container = styled.div<{ isMobilePortrait: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,19 +14,10 @@ const Container = styled.div`
     overflow: hidden;
 
     .scene {
-        width: 700px;
+        max-width: 70vw;
+        width: ${(props) => props.isMobilePortrait ? '700px' : '90vh'};
         perspective: 1000px;
         position: relative;
-
-        @media (max-width: 1700px}) {
-            width: 600px;
-        }
-        @media (max-width: 1300px) {
-            width: 500px;
-        }
-        @media (max-width: 700px) {
-            width: 100%;
-        }
     }
     .scene .carousel.keen-slider {
         width: 100%;
@@ -39,22 +30,13 @@ const Container = styled.div`
         align-items: center;
     }
     .carousel__cell {
-        width: 700px;
+        max-width: 70vw;
+        width: ${(props) => (props.isMobilePortrait ? '700px' : '90vh')};
         position: absolute;
 
         img {
             width: 100%;
             display: block;
-        }
-
-        @media (max-width: 1700px) {
-            width: 600px;
-        }
-        @media (max-width: 1300px) {
-            width: 500px;
-        }
-        @media (max-width: 700px) {
-            width: 100%;
         }
     }
 `
