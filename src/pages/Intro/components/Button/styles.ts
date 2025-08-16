@@ -89,7 +89,7 @@ export const BtnHistoria = styled(Btn)`
             width: 34%;
         }
         &.btn3 {
-            border-width: 2px 2px 2px 1px;
+            border-width: 2px 2px 1px 1px;
             border-radius: 0 25px 25px 0
         }
 

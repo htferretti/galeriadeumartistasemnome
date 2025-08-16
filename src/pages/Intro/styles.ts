@@ -6,11 +6,11 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 `
 
 const ImageTitle = styled.img`
     width: 300px;
+    align-self: center;
 
     @media (max-width: 400px) {
         width: 250px;

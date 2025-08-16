@@ -9,10 +9,13 @@ const Slider = styled.div`
     text-align: justify;
     font-size: 24px;
     color: ${colors.main};
+    align-self: center;
 
     @media (max-width: 500px) {
         font-size: 20px;
         max-width: 350px;
+        align-self: start;
+        margin-top: 48px;
     }
 
     p {
