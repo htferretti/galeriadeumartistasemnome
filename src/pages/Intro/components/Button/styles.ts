@@ -16,6 +16,10 @@ const Container = styled.div`
     p {
         font-size: 24px;
         font-weight: 500;
+
+        @media (max-width: 400px) {
+            font-size: 20px;
+        }
     }
 `
 export const MotionContainer = motion(Container)
@@ -31,6 +35,10 @@ export const Btn = styled.button`
     border-style: solid;
     border-color: ${colors.main};
     cursor: pointer;
+
+    @media (max-width: 400px) {
+        font-size: 16px;
+    }
 
     &.left {
         width: 50%;
@@ -66,8 +74,6 @@ export const BtnHistoria = styled(Btn)`
     button {
         width: 33%;
         padding: 8px 0;
-        font-size: 20px;
-        background: none;
         color: ${colors.main};
         border-style: solid;
         border-color: ${colors.main};

@@ -10,6 +10,11 @@ const Slider = styled.div`
     font-size: 24px;
     color: ${colors.main};
 
+    @media (max-width: 500px) {
+        font-size: 20px;
+        max-width: 350px;
+    }
+
     p {
         margin: 32px 0;
         text-indent: 32px;

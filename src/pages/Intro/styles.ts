@@ -7,11 +7,13 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `
 
 const ImageTitle = styled.img`
     width: 300px;
-    opacity: 0;
+
+    @media (max-width: 400px) {
+        width: 250px;
+    }
 `
 export const MotionImageTitle = motion(ImageTitle)

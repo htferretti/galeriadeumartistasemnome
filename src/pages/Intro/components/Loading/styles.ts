@@ -18,6 +18,10 @@ const Container = styled.div`
     p {
         font-size: 24px;
         font-weight: 200;
+
+        @media (max-width: 400px) {
+            font-size: 20px;
+        }
     }
 
     h1 {

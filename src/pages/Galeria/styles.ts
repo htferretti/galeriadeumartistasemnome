@@ -17,6 +17,16 @@ const Container = styled.div`
         width: 700px;
         perspective: 1000px;
         position: relative;
+
+        @media (max-width: 1700px}) {
+            width: 600px;
+        }
+        @media (max-width: 1300px) {
+            width: 500px;
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+        }
     }
     .scene .carousel.keen-slider {
         width: 100%;
@@ -35,6 +45,16 @@ const Container = styled.div`
         img {
             width: 100%;
             display: block;
+        }
+
+        @media (max-width: 1700px) {
+            width: 600px;
+        }
+        @media (max-width: 1300px) {
+            width: 500px;
+        }
+        @media (max-width: 700px) {
+            width: 100%;
         }
     }
 `
